@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Первый герой",
-      "description": "Первы герой в рейтинге!",
+      "description": "Первый герой в рейтинге!",
       "element": "fire"
     },
     {
@@ -17,13 +17,39 @@
       "name": "Морской герой",
       "description": "Как аквамен, но не из DC",
       "element": "water"
+    },
+    {
+      "id": "d6aa0ce4-3d1d-4345-8443-ec25aa43adc4",
+      "name": "Гулбахар",
+      "description": "dddd",
+      "element": "earth"
     }
   ],
   "filters": [
-    "all",
-    "fire",
-    "water",
-    "wind",
-    "earth"
+    {
+      "name": "all",
+      "label": "Все",
+      "className": "btn-outline-dark"
+    },
+    {
+      "name": "fire",
+      "label": "Огонь",
+      "className": "btn-danger"
+    },
+    {
+      "name": "water",
+      "label": "Вода",
+      "className": "btn-primary"
+    },
+    {
+      "name": "wind",
+      "label": "Ветер",
+      "className": "btn-success"
+    },
+    {
+      "name": "earth",
+      "label": "Земля",
+      "className": "btn-secondary"
+    }
   ]
 }

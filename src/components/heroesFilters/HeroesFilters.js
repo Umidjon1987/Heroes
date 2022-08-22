@@ -17,7 +17,7 @@ import Spinner from "../spinner/Spinner";
 
 const HeroesFilters = () => {
 
-    const {filters, filtersLoadingStatus, activeFilter} = useSelector(state => state);
+    const {filters, filtersLoadingStatus, activeFilter} = useSelector(state => state.filters);
     const dispatch = useDispatch();
     const {request} = useHttp();
 
@@ -29,9 +29,9 @@ const HeroesFilters = () => {
             // eslint-disable-next-line
     }, []);
 
-    if (filtersLoadingStatus === 'loading') {
+    if (filtersLoadingStatus === "loading") {
         return <Spinner/>;
-    } else if (filtersLoadingStatus === 'error') {
+    } else if (filtersLoadingStatus === "error") {
         return <h5 className="text-center mt-5">Ошибка загрузки</h5>
     }
 
