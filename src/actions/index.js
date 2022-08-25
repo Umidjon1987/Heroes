@@ -36,11 +36,13 @@ export const filtersFetchingError = () => {
     }
 }
 
-export const activeFilterChanged = (filter) => {
-    return {
-        type: 'ACTIVE_FILTER_CHANGED',
-        payload: filter
-    }
+export const activeFilterChanged = (filter) => (dispatch) => {
+    setTimeout(() => {
+        dispatch({
+            type: 'ACTIVE_FILTER_CHANGED',
+            payload: filter
+        })
+    }, 1000)
 }
 
 export const heroCreated = (hero) => {
